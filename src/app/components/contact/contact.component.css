@@ -152,3 +152,16 @@
   0% { transform: translateX(-60%) rotate(15deg); }
   100% { transform: translateX(220%) rotate(15deg); }
 }
+
+
+
+
+.msg {
+  /* color: red; */
+  font-size: 1rem;
+} 
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
