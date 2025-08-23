@@ -1,0 +1,21 @@
+.spline-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+spline-viewer {
+  flex: 1;
+}
+
+
+
+a .logo {
+  background-color: red Im !important;
+}
+
+@media (max-width: 810px) {
+  .spline-wrap {
+    display: none !important;
+  }
+}

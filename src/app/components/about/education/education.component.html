@@ -1,0 +1,10 @@
+<div class="view">
+  <div class="grid cards">
+    <article class="card" *ngFor="let e of education">
+      <div class="period edu">{{ e.period }}</div>
+      <h3 class="heading">{{ e.title }}</h3>
+      <div class="sub">• {{ e.sub }}</div>
+      <p class="summary">{{ e.summary }}</p>
+    </article>
+  </div>
+</div>

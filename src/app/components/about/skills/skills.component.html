@@ -1,0 +1,8 @@
+<div class="view" *ngIf="tab() === 'skills'">
+    <div class="grid skills">
+      <div class="tile skill" *ngFor="let s of skills">
+        <div class="glyph">{{ s.short || s.label.charAt(0) }}</div>
+        <div class="label">{{ s.label }}</div>
+      </div>
+    </div>
+  </div>

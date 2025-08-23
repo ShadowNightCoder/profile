@@ -1,0 +1,18 @@
+<section class="resume">
+  <h2 class="title">Resume</h2>
+
+ <div class="tabs">
+  <button class="tab" [class.active]="tab()==='experience'" (click)="setTab('experience')">Experience</button>
+  <button class="tab" [class.active]="tab()==='skills'" (click)="setTab('skills')">Skills</button>
+  <button class="tab" [class.active]="tab()==='education'" (click)="setTab('education')">Education</button>
+</div>
+
+<div class="underline">
+  <span [ngClass]="{uxp: tab()==='experience', uxs: tab()==='skills', uxe: tab()==='education'}"></span>
+</div>
+
+<app-skills *ngIf="tab()==='skills'"></app-skills>
+<app-experience *ngIf="tab()==='experience'"></app-experience>
+<app-education *ngIf="tab()==='education'"></app-education>
+
+</section>

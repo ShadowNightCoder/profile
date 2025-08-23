@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111624;
+  padding: 1.5rem 2rem;
+  color: white;
+  font-family: "Heebo", sans-serif;
+}
+
+
+
+.site-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.neon-letter {
+  color: #00bfff; /* solid bright blue core */
+  position: relative;
+  animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #00eaff,
+      0 0 2px #00eaff,
+      0 0 2px #00d4ff;
+  }
+  55% {
+    text-shadow: none; 
+  }
+}
+
+
+
+
+
+
+.nav-right ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.nav-right a:hover,
+.nav-right a.active {
+  color: #00FFFF;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .nav-right ul {
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+}
