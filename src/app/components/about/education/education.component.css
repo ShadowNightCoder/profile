@@ -3,21 +3,32 @@
   margin: 0 auto; 
 }
 
+/* bar */
+
 .grid { 
   display: grid; 
   gap: clamp(1rem, 3vw, 1.25rem); 
 }
 
+/* bar */
+
 .cards { 
   grid-template-columns: repeat(3, minmax(0,1fr)); 
 }
 
+/* bar */
+
 @media (max-width: 992px) {
   .cards { grid-template-columns: repeat(2, minmax(0,1fr)); }
 }
+
+/* bar */
+
 @media (max-width: 560px) {
   .cards { grid-template-columns: 1fr; }
 }
+
+/* bar */
 
 .card {
   background: linear-gradient(180deg, #222b39, #1b2432);
@@ -33,28 +44,42 @@
   background: linear-gradient(180deg, #263246, #1b2432);
 }
 
+/* bar */
+
 .card .period { 
   color: #6ad7ff; 
   font-weight: 800; 
   font-size: .95rem; 
   margin-bottom: .35rem; 
 }
+
 .card .period.edu { 
   color: #2dd4bf; 
 }
+
+/* bar */
+
 .card .heading { 
   margin: 0; 
   font-size: 1.25rem; 
   font-weight: 800; 
 }
+
+/* bar */
+
 .card .sub { 
   margin-top: .15rem; 
   color: #b8c0cc; 
   font-weight: 600; 
 }
+
+/* bar */
+
 .card .summary { 
   margin: .6rem 0 0; 
   color: #b8c0cc; 
   line-height: 1.55; 
   font-size: .98rem; 
 }
+
+/* bar */

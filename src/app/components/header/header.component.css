@@ -1,3 +1,5 @@
+/* Bar – Navigation Styles */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -7,7 +9,6 @@
   color: white;
   font-family: "Heebo", sans-serif;
 }
-
 
 @media (max-width: 430px) {
   .navbar {
@@ -25,7 +26,6 @@
   }
 }
 
-
 @media (max-width: 380px) {
   .navbar {
     padding: 0.8rem 0.6rem;
@@ -41,7 +41,6 @@
 }
 
 @media (max-width: 290px) {
-
   .site-title {
     font-size: 1.1rem !important;
   }
@@ -51,7 +50,6 @@
   }
 }
 
-
 .site-title {
   font-size: 2.8rem;
   font-weight: 800;
@@ -59,15 +57,15 @@
   letter-spacing: 1px;
 }
 
+/* Bar – Neon Effect */
+
 .neon-letter {
   color: #00bfff;
-  /* solid bright blue core */
   position: relative;
   animation: flicker 2s infinite;
 }
 
 @keyframes flicker {
-
   0%,
   100% {
     text-shadow:
@@ -75,16 +73,10 @@
       0 0 2px #00eaff,
       0 0 2px #00d4ff;
   }
-
   55% {
     text-shadow: none;
   }
 }
-
-
-
-
-
 
 .nav-right ul {
   list-style: none;
@@ -112,9 +104,9 @@
   .navbar {
     text-align: center;
   }
-
   .nav-right ul {
     gap: 0.75rem;
-    /* margin-top: 0.5rem; */
   }
 }
+
+/* End – Bar */

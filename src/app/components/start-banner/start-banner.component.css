@@ -1,3 +1,5 @@
+/* Bar – Profile Intro Styles */
+
 .profile-intro {
   background:
     radial-gradient(80rem 40rem at 10% 10%, rgba(0,229,255,0.08), transparent 60%),
@@ -11,9 +13,7 @@
   width: 100%;
 }
 
-.profile-intro .content {
-  max-width: 760px;
-}
+.profile-intro .content { max-width: 760px; }
 
 .profile-intro .eyebrow {
   margin: 0 0 .5rem;
@@ -84,6 +84,8 @@
   gap: .75rem;
 }
 
+/* Bar – Buttons & Social */
+
 .profile-intro .social a {
   display: inline-grid;
   place-items: center;
@@ -108,26 +110,21 @@
   .profile-intro .btn { width: 100%; max-width: 260px; }
 }
 
-.spline-wrap{
-  /* position: absolute; */
-  /* top: 0; */
+.spline-wrap {
   width: 60%;
-  /* height: 100%; */
   border: 2px solid yellow;
   transform: scale(0.5);
 }
 
 @media (max-width: 1125px){
-  .profile-intro{
+  .profile-intro {
     flex-wrap: wrap;
     gap: 3em;
   }
-
 }
-
 
 @media (max-width: 1130px) {
-  #dispear {
-    display: none;
-  }
+  #dispear { display: none; }
 }
+
+/* End of Profile Intro – Bar */
