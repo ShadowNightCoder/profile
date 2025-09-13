@@ -9,6 +9,48 @@
 }
 
 
+@media (max-width: 430px) {
+  .navbar {
+    padding: 0.8rem 1.3rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .navbar {
+    padding: 0.8rem 0.8rem;
+  }
+
+  .site-title {
+    font-size: 2.2rem !important;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .navbar {
+    padding: 0.8rem 0.6rem;
+  }
+
+  .site-title {
+    font-size: 1.2rem !important;
+  }
+
+  .nav-right a {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 290px) {
+
+  .site-title {
+    font-size: 1.1rem !important;
+  }
+
+  .nav-right a {
+    font-size: 0.8rem !important;
+  }
+}
+
 
 .site-title {
   font-size: 2.8rem;
@@ -18,20 +60,24 @@
 }
 
 .neon-letter {
-  color: #00bfff; /* solid bright blue core */
+  color: #00bfff;
+  /* solid bright blue core */
   position: relative;
   animation: flicker 2s infinite;
 }
 
 @keyframes flicker {
-  0%, 100% {
+
+  0%,
+  100% {
     text-shadow:
       0 0 5px #00eaff,
       0 0 2px #00eaff,
       0 0 2px #00d4ff;
   }
+
   55% {
-    text-shadow: none; 
+    text-shadow: none;
   }
 }
 
@@ -54,6 +100,7 @@
   font-weight: 500;
   transition: color 0.3s;
   cursor: pointer;
+  font-size: 1.12rem;
 }
 
 .nav-right a:hover,
@@ -68,6 +115,6 @@
 
   .nav-right ul {
     gap: 0.75rem;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
   }
 }
